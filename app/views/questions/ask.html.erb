@@ -1,0 +1,13 @@
+<h1>Stupid Coaching</h1>
+
+<!-- au clic : envoyer GET /answer?question=... -->
+<form action="/answer" data-turbo="false">
+  <p class="mb-1">Ask your coach anything:</p>
+  <!-- le label reste pour l'accessibilité, mais caché visuellement -->
+  <label for="question" class="visually-hidden">Your question</label>
+  <div class="input-group">
+    <!-- name="question" : la clé lue dans params[:question] -->
+    <input type="text" id="question" name="question" class="form-control" autofocus>
+    <input type="submit" value="Ask" class="btn btn-primary">
+  </div>
+</form>
